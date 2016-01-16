@@ -1,0 +1,21 @@
+{
+  "name": "lmstfy",
+  "version": "1.0.0",
+  "description": "Let Me Skroytz That for You",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Meletis Flevarakis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "forever": "^0.15.1",
+    "forever-monitor": "^1.7.0"
+  },
+  "devDependencies": {
+    "fly": "^0.8.6",
+    "util-extend": "^1.0.3"
+  }
+}
