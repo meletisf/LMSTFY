@@ -15,6 +15,8 @@ app.get('/', function(req, res) {
 	res.render('home')
 })
 
-app.listen(app.get('port'), function() {
-	console.log('LMSTFY started! Press Ctrl+C to exit.')
-})
+// app.listen(app.get('port'), function() {
+// 	console.log('LMSTFY started! Press Ctrl+C to exit.')
+// })
+
+app.listen(app.get('port'), "lmstfy.ga")
