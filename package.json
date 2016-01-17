@@ -13,7 +13,8 @@
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
     "forever": "^0.15.1",
-    "goo.gl": "^0.1.4"
+    "goo.gl": "^0.1.4",
+    "pusher": "^1.1.0"
   },
   "devDependencies": {
     "fly": "^0.8.6",

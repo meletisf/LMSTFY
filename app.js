@@ -1,6 +1,7 @@
 var express = require('express')
 var googl = require('goo.gl')
 var bodyParser = require('body-parser')
+var broadcast = require('./broadcast')
 
 var app = express()
 var handlebars = require('express-handlebars').create({
@@ -53,6 +54,20 @@ app.post('/short', function(req, res) {
 			message: err
 		}))
 	})
+
+})
+
+app.put('/broadcast', function(req, res) {
+	
+	if (!req.body.term) {
+		res.send(JSON.stringify({
+			status: false
+		}))
+	};
+
+	res.send(broadcast.push({
+		term: req.body.term
+	}))
 
 })
 

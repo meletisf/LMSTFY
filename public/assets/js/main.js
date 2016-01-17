@@ -86,7 +86,7 @@ function magic() {
 	
 	$('input[name=lmstfy_link]').val('http://' + baseUrl + keyphrase);
 	
-	
+	$('#lmstfy_link').removeClass('broadcasted');
 	$('#link_area').slideDown('slow');
 	$('#short_panel').slideUp('slow');
 	$('#intro_well').slideUp('slow', function() {
@@ -95,6 +95,11 @@ function magic() {
 
 	$('input[name=lmstfy_link]').on('click', function() {
 		$(this).select();
+		if (!$('input[name=lmstfy_link]').hasClass('broadcasted')) {
+			$('#lmstfy_link').addClass('broadcasted');
+			broadcast();
+		};
+		
 	});
 
 
