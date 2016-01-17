@@ -38,10 +38,19 @@
         Κάνε share το παρακάτω λινκ.
       </div>
       
+      <span id="link_area">
       <label for="lmstfy_link">Το λινκ σου:</label>
       <input id="lmstfy_link" name="lmstfy_link" type="text" class="form-control">
-      <label><a onclick="">Miκρυνε  το</a></label>
-    
+      <label><a onclick="shortLink()">Miκρυνε  το</a></label>
+      </span>
+
+      <div class="panel panel-default" id="short_panel" style="display:none;">
+        <div class="panel-heading">Goo.gl link</div>
+        <div class="panel-body">
+          <input id="lmstfy_slink" name="lmstfy_slink" type="text" class="form-control">
+        </div>
+      </div>
+
     </div>
     
     <div class="well well-lg" id="intro_well">

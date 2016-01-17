@@ -9,10 +9,11 @@
   "author": "Meletis Flevarakis",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.14.2",
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
     "forever": "^0.15.1",
-    "forever-monitor": "^1.7.0"
+    "goo.gl": "^0.1.4"
   },
   "devDependencies": {
     "fly": "^0.8.6",

@@ -86,6 +86,9 @@ function magic() {
 	
 	$('input[name=lmstfy_link]').val('http://' + baseUrl + keyphrase);
 	
+	
+	$('#link_area').slideDown('slow');
+	$('#short_panel').slideUp('slow');
 	$('#intro_well').slideUp('slow', function() {
 		$('#well').slideDown('slow');
 	});
@@ -94,5 +97,29 @@ function magic() {
 		$(this).select();
 	});
 
+
+}
+
+function shortLink() {
+
+	var getLink = $('input[name=lmstfy_link]').val();
+
+	$.ajax({
+		type: "POST",
+		url: "/short",
+		data: {
+			link: getLink
+		},
+		success: function(data) {
+
+			$('input[name=lmstfy_slink]').val(data.message);
+			$('#short_panel').slideDown('slow');
+			
+		}
+	})
+
+	$('input[name=lmstfy_slink]').on('click', function() {
+		$(this).select();
+	});
 
 }
